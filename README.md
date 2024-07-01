@@ -33,7 +33,7 @@ file:.env.json
 console
 HttpQuick test.http
 
-{{トークン名}}としておくと、.env.jsonから読み込んでリプレスして解釈します。
+{{token name}} will be read from .env.json and repressed and interpreted.
 # JP
 HttpQuickはコマンドラインで実行してhttpリクエストを行うツール。
 
