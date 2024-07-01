@@ -2,6 +2,8 @@
 # EN
 A HttpQuick that executes on the command line to make http requests.
 
+## I am not responsible for any damages whatsoever. Please use at your own risk.
+
 Write the command line in an http file.
 execute_http_file reads the file and sends the request.
 Reads the http file, splitting the text with "###" to recognize it as a separate command.
@@ -36,6 +38,8 @@ HttpQuick test.http
 {{token name}} will be read from .env.json and repressed and interpreted.
 # JP
 HttpQuickはコマンドラインで実行してhttpリクエストを行うツール。
+
+## いかなる損害についても、私は責任を負いません。自己責任でご利用ください。
 
 コマンドラインを http ファイルに記述する。
 execute_http_fileはファイルを読み込んでリクエストを送信する。
