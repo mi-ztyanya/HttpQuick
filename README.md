@@ -24,7 +24,7 @@ file:test.http
 
 GET {{access_url}}/user/userlist/json  
 
-\###
+###
 
 GET {{access_url}}/user/data  
 Name: Alice  
@@ -71,7 +71,7 @@ file:test.http
 
 GET {{access_url}}/user/userlist/json  
 
-\###
+###
 
 GET {{access_url}}/user/data  
 Name: Alice  
