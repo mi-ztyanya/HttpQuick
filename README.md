@@ -2,7 +2,7 @@
 # EN
 A HttpQuick that executes on the command line to make http requests.
 
-## I am not responsible for any damages whatsoever. Please use at your own risk.
+I am not responsible for any damages whatsoever. Please use at your own risk.
 
 Write the command line in an http file.
 execute_http_file reads the file and sends the request.
@@ -18,28 +18,34 @@ TOKEN can also be replaced.
 For example, http file as specify GET {{token}}/data, create *.env.json in the current directory and save it as {"token": "test"}. In this case, the file is interpreted as GET test/data. (If the extension is .env.json, it will be read).
 
 how to use
-
+'''http
 file:test.http
-GET {{access_url}}/user/userlist/json
-###
-GET {{access_url}}/user/data
-Name: Alice
+
+GET {{access_url}}/user/userlist/json  
+
+\###
+
+GET {{access_url}}/user/data  
+Name: Alice  
 Data: {{data_type}}
+'''
 
-file:.env.json
-{
-    "access_url": "localhost"
-    "data_type": "Age"
-}
+file:.env.json  
+{  
+    "access_url": "localhost"  
+    "data_type": "Age"  
+}  
 
-console
+console  
 HttpQuick test.http
+<br><br>
 
 {{token name}} will be read from .env.json and repressed and interpreted.
+
 # JP
 HttpQuickはコマンドラインで実行してhttpリクエストを行うツール。
 
-## いかなる損害についても、私は責任を負いません。自己責任でご利用ください。
+いかなる損害についても、私は責任を負いません。自己責任でご利用ください。
 
 コマンドラインを http ファイルに記述する。
 execute_http_fileはファイルを読み込んでリクエストを送信する。
@@ -56,14 +62,18 @@ TOKENを置き換えることもできる。
 
 使用方法
 
-ファイル:test.http
-GET {{access_url}}/user/userlist/json
-###
-GET {{access_url}}/user/data
-Name: Alice
-Data: {{data_type}}
+ファイル:test.http  
 
+GET {{access_url}}/user/userlist/json  
 
+\###
+
+GET {{access_url}}/user/data  
+Name: Alice  
+Data: {{data_type}}  
+  
+  
+  
 
 ファイル:.env.json
 {
@@ -71,9 +81,8 @@ Data: {{data_type}}
     "data_type": "Age"
 }
 
-
-
-コンソール上
+コンソール上  
 HttpQuick test.http
+<br><br>
 
 {{トークン名}}としておくと、.env.jsonから読み込んでリプレスして解釈します。
