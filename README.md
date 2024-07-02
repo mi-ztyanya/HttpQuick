@@ -17,9 +17,10 @@ To append the time to the output file name, append "-d" to the argument.
 TOKEN can also be replaced.
 For example, http file as specify GET {{token}}/data, create *.env.json in the current directory and save it as {"token": "test"}. In this case, the file is interpreted as GET test/data. (If the extension is .env.json, it will be read).
 
-how to use
-'''http
+## Example
+
 file:test.http
+```
 
 GET {{access_url}}/user/userlist/json  
 
@@ -28,19 +29,22 @@ GET {{access_url}}/user/userlist/json
 GET {{access_url}}/user/data  
 Name: Alice  
 Data: {{data_type}}
-'''
+```
 
 file:.env.json  
+```
 {  
     "access_url": "localhost"  
     "data_type": "Age"  
 }  
 
+```
 console  
+```
 HttpQuick test.http
-<br><br>
+```
 
-{{token name}} will be read from .env.json and repressed and interpreted.
+{{token_name}} will be read from .env.json and repressed and interpreted.
 
 # JP
 HttpQuickはコマンドラインで実行してhttpリクエストを行うツール。
@@ -60,9 +64,10 @@ httpファイルを読み込む、"###"でテキストを分割することで�
 TOKENを置き換えることもできる。
 例えば、httpファイルにGET {{token}}/dataと用意し、カレントディレクトリに*.env.jsonを作成して{"token"： 「test"}として保存します。この場合、ファイルはGET test/dataとして解釈されます。(拡張子が.env.jsonの場合に読み込まれます）。
 
-使用方法
+## Example
 
-ファイル:test.http  
+file:test.http
+```
 
 GET {{access_url}}/user/userlist/json  
 
@@ -70,19 +75,20 @@ GET {{access_url}}/user/userlist/json
 
 GET {{access_url}}/user/data  
 Name: Alice  
-Data: {{data_type}}  
-  
-  
-  
+Data: {{data_type}}
+```
 
-ファイル:.env.json
-{
-    "access_url": "localhost"
-    "data_type": "Age"
-}
+file:.env.json  
+```
+{  
+    "access_url": "localhost"  
+    "data_type": "Age"  
+}  
 
-コンソール上  
+```
+console  
+```
 HttpQuick test.http
-<br><br>
+```
 
-{{トークン名}}としておくと、.env.jsonから読み込んでリプレスして解釈します。
+{{トークン名}}としておくと、.env.jsonから読み込んでそれぞれリプレスして解釈します。
